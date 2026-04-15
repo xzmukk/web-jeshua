@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO: Title & Description ── -->
+  <title>Ropa Cristiana Premium | Jeshua Shirts</title>
+  <meta name="description" content="Jeshua Shirts — ropa cristiana premium con propósito. Viste tu fe con estilo. Pide tu camisa por WhatsApp. Fe en cada hilo." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Jeshua Shirts" />
+  <link rel="canonical" href="https://jeshuashirts.com/" />
+  <link rel="icon" type="image/png" href="assets/Logo%20final%20jeshua%20shirts.png" />
+  <link rel="apple-touch-icon" href="assets/Logo%20final%20jeshua%20shirts.png" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:title" content="Jeshua Shirts — Fe en Cada Hilo" />
+  <meta property="og:description" content="Ropa cristiana premium. Diseñada para creyentes modernos. Pide tu Jeshua Shirt por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jeshuashirts.com/" />
+  <meta property="og:image" content="assets/Untitled design (5).png" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Jeshua Shirts" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jeshua Shirts — Fe en Cada Hilo" />
+  <meta name="twitter:description" content="Ropa cristiana premium. Pide tu camisa por WhatsApp." />
+  <meta name="twitter:image" content="assets/Untitled design (5).png" />
+
+  <!-- ── Schema.org: ClothingStore + LocalBusiness ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["ClothingStore", "LocalBusiness"],
+    "name": "Jeshua Shirts",
+    "description": "Marca de ropa cristiana premium. Diseñamos prendas para creyentes modernos que visten su fe con propósito.",
+    "url": "https://jeshuashirts.com/",
+    "telephone": "<!-- REVISAR -->",
+    "email": "hello@jeshuashirts.com",
+    "sameAs": ["https://www.instagram.com/jeshuashirt/"],
+    "areaServed": "Worldwide",
+    "priceRange": "<!-- REVISAR -->",
+    "image": "assets/Untitled design (5).png",
+    "logo": "assets/Logo%20final%20jeshua%20shirts.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Spanish"]
+    }
+  }
+  </script>
+
+  <!-- ── Preload hero ── -->
+  <link rel="preload" as="image" href="assets/diseno-desktop.png" />
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white:  #FFFFFF;
+      --beige:  #F5F0EB;
+      --beige2: #EDE6DC;
+      --black:  #1A1A1A;
+      --gold:   #C9A96E;
+      --brown:  #8B7355;
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      color: var(--black);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; width: 100%; }
+    a  { text-decoration: none; color: inherit; }
+
+    /* ── FADE IN ANIMATION ─────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── NAV ───────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.4rem 4rem;
+      transition: background .4s ease, box-shadow .4s ease;
+    }
+    nav.scrolled {
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 1px 0 rgba(0,0,0,.08);
+      backdrop-filter: blur(8px);
+    }
+
+    /* nav-row-top transparent on desktop — children participate in nav flex */
+    .nav-row-top {
+      display: contents;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    /* Logo badge */
+    .nav-logo-badge {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .nav-logo-badge img {
+      width: 40px !important;
+      height: 40px !important;
+      object-fit: contain;
+      filter: none;
+    }
+    nav.scrolled .nav-logo-badge img { filter: none; }
+
+    /* Logo text group */
+    .nav-logo-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .nav-logo-text {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1;
+      transition: color .4s;
+    }
+    nav.scrolled .nav-logo-text { color: var(--black); }
+    .nav-logo-sub {
+      font-family: var(--serif);
+      font-size: .6rem;
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255,255,255,.55);
+      letter-spacing: .1em;
+      line-height: 1;
+      transition: color .4s;
+    }
+    nav.scrolled .nav-logo-sub { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.85);
+      transition: color .3s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    nav.scrolled .nav-links a { color: var(--brown); }
+    nav.scrolled .nav-links a:hover { color: var(--black); }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--white);
+      transition: background .4s;
+    }
+    nav.scrolled .nav-hamburger span { background: var(--black); }
+
+    /* ── HERO ──────────────────────────────────────── */
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 100dvh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('assets/diseno-desktop.png') center center / cover no-repeat;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        120deg,
+        rgba(255,255,255,.45) 0%,
+        rgba(255,255,255,.10) 60%,
+        rgba(255,255,255,0) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 4rem;
+      max-width: 640px;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-family: var(--sans);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(3.4rem, 7vw, 6rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--black);
+      letter-spacing: -.01em;
+      margin-bottom: 1rem;
+    }
+    .hero-tagline {
+      font-family: var(--serif);
+      font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(26,26,26,.75);
+      margin-bottom: 1.4rem;
+    }
+    .hero-desc {
+      font-size: .88rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(26,26,26,.65);
+      max-width: 420px;
+      margin-bottom: 2.4rem;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .85rem 2rem;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background .3s, transform .2s;
+    }
+    .btn-primary:hover { background: #333; transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .85rem 2rem;
+      background: transparent;
+      color: var(--black);
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      border: 1px solid rgba(26,26,26,.45);
+      cursor: pointer;
+      transition: border-color .3s, background .3s, transform .2s;
+    }
+    .btn-outline:hover {
+      border-color: var(--gold);
+      background: rgba(201,169,110,.12);
+      transform: translateY(-1px);
+    }
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .85rem 2rem;
+      background: #25D366;
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      transition: background .3s, transform .2s;
+    }
+    .btn-wa:hover { background: #1ebe5d; transform: translateY(-1px); }
+
+    /* ── HERO WRAPPERS ── */
+    .hero-top    { } /* normal block on desktop */
+    .hero-bottom { } /* normal block on desktop */
+    .hero-shirt-wrap { display: none; } /* hidden on desktop and by default */
+
+    /* hero scroll indicator */
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      color: rgba(26,26,26,.4);
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, rgba(26,26,26,.4), transparent);
+      animation: scrollLine 1.8s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%   { transform: scaleY(0); transform-origin: top; }
+      50%  { transform: scaleY(1); transform-origin: top; }
+      50.01% { transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ── FLOATING WA BUTTON ────────────────────────── */
+    .wa-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 200;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.35);
+      transition: transform .3s, box-shadow .3s;
+      animation: waPulse 2.5s ease-in-out infinite;
+    }
+    .wa-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(37,211,102,.5);
+      animation: none;
+    }
+    .wa-float i { color: var(--white); font-size: 1.5rem; }
+    @keyframes waPulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,.35); }
+      50%       { box-shadow: 0 4px 32px rgba(37,211,102,.6); }
+    }
+
+    /* ── SECTION COMMONS ───────────────────────────── */
+    section { padding: 7rem 4rem; }
+    .section-label {
+      font-family: var(--sans);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--black);
+      margin-bottom: 1.2rem;
+    }
+    .section-sub {
+      font-size: .88rem;
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--brown);
+      max-width: 560px;
+    }
+
+    /* ── COLLECTION ────────────────────────────────── */
+    #collection { background: var(--white); }
+    .collection-header { text-align: center; margin-bottom: 4rem; }
+    .collection-header .section-label { justify-content: center; }
+    .collection-header .section-label::before { display: none; }
+    .collection-header .section-sub { margin: 0 auto; }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,.06);
+      overflow: hidden;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 48px rgba(0,0,0,.09);
+    }
+    .product-img-wrap {
+      position: relative;
+      background: var(--beige);
+      aspect-ratio: 4/5;
+      overflow: hidden;
+    }
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 1.5rem;
+      transition: transform .5s ease;
+    }
+    .product-card:hover .product-img-wrap img { transform: scale(1.04); }
+    .product-info {
+      padding: 1.4rem 1.5rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      flex: 1;
+    }
+    .product-name {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--black);
+      letter-spacing: .02em;
+    }
+    .product-verse {
+      font-family: var(--serif);
+      font-size: .88rem;
+      font-style: italic;
+      color: var(--brown);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .product-cta {
+      margin-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .75rem 1.2rem;
+      background: var(--black);
+      color: var(--white);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      transition: background .3s;
+    }
+    .product-cta:hover { background: #25D366; }
+    .product-cta i { font-size: .85rem; }
+
+    /* ── PRODUCT VIEW SWITCHER ─────────────────────── */
+    .product-views {
+      display: flex;
+      gap: .35rem;
+      padding: .65rem 1.2rem .45rem;
+      justify-content: center;
+      border-top: 1px solid rgba(0,0,0,.05);
+      background: var(--white);
+    }
+    .view-btn {
+      font-family: var(--sans);
+      font-size: .58rem;
+      font-weight: 500;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      padding: .28rem .72rem;
+      border: 1px solid rgba(0,0,0,.13);
+      background: transparent;
+      cursor: pointer;
+      color: var(--brown);
+      border-radius: 20px;
+      transition: background .2s, color .2s, border-color .2s;
+      line-height: 1.5;
+    }
+    .view-btn.active,
+    .view-btn:hover {
+      background: var(--black);
+      color: var(--white);
+      border-color: var(--black);
+    }
+
+    /* ── ABOUT ─────────────────────────────────────── */
+    #about { background: var(--beige); }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .about-quote {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.35;
+      color: var(--black);
+      border-left: 2px solid var(--gold);
+      padding-left: 2rem;
+    }
+    .about-text p {
+      font-size: .88rem;
+      font-weight: 300;
+      line-height: 2;
+      color: var(--brown);
+      margin-bottom: 1.4rem;
+    }
+    .about-text p:last-child { margin-bottom: 0; }
+    .cross-accent {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    /* ── FAITH MESSAGE ─────────────────────────────── */
+    #faith {
+      background: var(--black);
+      text-align: center;
+      padding: 8rem 4rem;
+    }
+    .faith-cross {
+      font-size: 2rem;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      display: block;
+      opacity: .7;
+    }
+    .faith-verse {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.4;
+      max-width: 700px;
+      margin: 0 auto 1rem;
+    }
+    .faith-ref {
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2.5rem;
+      display: block;
+    }
+    .faith-line {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 2rem auto;
+      opacity: .5;
+    }
+    .faith-desc {
+      font-size: .88rem;
+      font-weight: 300;
+      line-height: 2;
+      color: rgba(255,255,255,.55);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── COMMUNITY ─────────────────────────────────── */
+    #community { background: var(--beige2); }
+    .community-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .community-header { margin-bottom: 4rem; }
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .community-card {
+      background: var(--white);
+      padding: 2.5rem 2rem;
+      border-top: 2px solid var(--gold);
+    }
+    .community-card-icon {
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+    .community-card-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--black);
+      margin-bottom: .75rem;
+    }
+    .community-card-text {
+      font-size: .83rem;
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--brown);
+    }
+    .community-ig {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .community-ig a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--black);
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 2px;
+      transition: color .3s;
+    }
+    .community-ig a:hover { color: var(--gold); }
+
+    /* ── HOW TO ORDER ──────────────────────────────── */
+    #order {
+      background: var(--black);
+      text-align: center;
+    }
+    #order .section-title { color: var(--white); }
+    #order .section-label { justify-content: center; color: var(--gold); }
+    #order .section-label::before { display: none; }
+    .order-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      max-width: 900px;
+      margin: 4rem auto 0;
+      position: relative;
+    }
+    .order-steps::before {
+      content: '';
+      position: absolute;
+      top: 2rem;
+      left: calc(16.66% + 1rem);
+      right: calc(16.66% + 1rem);
+      height: 1px;
+      background: linear-gradient(to right, var(--gold), rgba(201,169,110,.2), var(--gold));
+    }
+    .order-step { position: relative; }
+    .step-number {
+      font-family: var(--serif);
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+    .step-icon {
+      font-size: 1.3rem;
+      color: rgba(255,255,255,.3);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .step-title {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: .6rem;
+    }
+    .step-text {
+      font-size: .8rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(255,255,255,.45);
+    }
+    .order-cta { margin-top: 4rem; }
+
+    /* ── CONTACT ───────────────────────────────────── */
+    #contact { background: var(--beige); text-align: center; }
+    .contact-inner { max-width: 600px; margin: 0 auto; }
+    .contact-inner .section-label { justify-content: center; }
+    .contact-inner .section-label::before { display: none; }
+    .contact-inner .section-title { font-size: clamp(2rem, 4vw, 3rem); }
+    .contact-inner .section-sub { margin: 0 auto 2.5rem; text-align: center; }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .contact-links a {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--brown);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      transition: color .3s;
+    }
+    .contact-links a:hover { color: var(--black); }
+
+    /* ── FOOTER ────────────────────────────────────── */
+    footer {
+      background: var(--black);
+      padding: 3.5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+    .footer-logo img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+    }
+    .footer-logo-text {
+      font-family: var(--serif);
+      font-size: .95rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .footer-tagline {
+      font-family: var(--serif);
+      font-size: .85rem;
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255,255,255,.35);
+    }
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 50%;
+      color: rgba(255,255,255,.45);
+      font-size: .9rem;
+      transition: border-color .3s, color .3s;
+    }
+    .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-line {
+      width: 100%;
+      max-width: 400px;
+      height: 1px;
+      background: rgba(255,255,255,.08);
+    }
+    .footer-copy {
+      font-size: .68rem;
+      font-weight: 300;
+      letter-spacing: .12em;
+      color: rgba(255,255,255,.22);
+      text-transform: uppercase;
+    }
+
+    /* ── MOBILE STICKY CTA BAR ─────────────────────── */
+    .mobile-cta-bar {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .mobile-cta-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+        z-index: 300;
+        background: #25D366;
+        padding: 1rem 1.5rem;
+        align-items: center;
+        justify-content: center;
+        gap: .6rem;
+        box-shadow: 0 -4px 24px rgba(37,211,102,.3);
+        transform: translateY(100%);
+        transition: transform .4s cubic-bezier(.16,1,.3,1);
+      }
+      .mobile-cta-bar.visible { transform: translateY(0); }
+      .mobile-cta-bar a {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        color: #fff;
+        font-family: var(--sans);
+        font-size: .75rem;
+        font-weight: 500;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+      }
+      .mobile-cta-bar i { font-size: 1.15rem; }
+    }
+
+    /* ── RESPONSIVE ────────────────────────────────── */
+    @media (max-width: 768px) {
+
+      /* ─── NAV MOBILE: 2-ROW LAYOUT ─── */
+      nav {
+        padding: 0;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+
+      /* Top row: logo + hamburger (only shown on mobile for overflow situations) */
+      .nav-row-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.85rem 1.2rem;
+        width: 100%;
+      }
+
+      /* Logo badge smaller on mobile */
+      .nav-logo-badge img {
+        width: 34px !important;
+        height: 34px !important;
+      }
+
+      .nav-logo-text { font-size: .9rem; }
+      .nav-logo-sub { font-size: .55rem; }
+
+      /* Hamburger hidden: links always visible as scroll row */
+      .nav-hamburger { display: none; }
+
+      /* Bottom row: nav links as horizontal scroll pill strip */
+      .nav-links {
+        display: flex !important;
+        gap: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 0 0.8rem 0.7rem;
+        border-top: 1px solid rgba(255,255,255,.14);
+        transition: border-color .4s;
+      }
+      .nav-links::-webkit-scrollbar { display: none; }
+      nav.scrolled .nav-links { border-top-color: rgba(0,0,0,.06); }
+      .nav-links li { flex-shrink: 0; }
+      .nav-links a {
+        display: block;
+        padding: 0.35rem 0.9rem;
+        font-size: .6rem;
+        letter-spacing: .16em;
+        white-space: nowrap;
+        border-radius: 20px;
+        transition: background .25s, color .25s;
+      }
+      .nav-links a:hover,
+      .nav-links a:active {
+        background: rgba(255,255,255,.15);
+        color: var(--white) !important;
+      }
+      nav.scrolled .nav-links a:hover,
+      nav.scrolled .nav-links a:active {
+        background: rgba(201,169,110,.12);
+        color: var(--black) !important;
+      }
+
+      section { padding: 5rem 1.5rem; }
+      #faith { padding: 6rem 1.5rem; }
+
+      /* ─── HERO MOBILE ─── */
+
+      /* Fondo: diseño mobile.png ocupa todo el hero */
+      #hero {
+        height: 100dvh;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        padding-top: 88px; /* altura del nav fijo de 2 filas */
+      }
+
+      .hero-bg {
+        background-image: url("assets/productos/diseno-web-mobile.png");
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .hero-overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,.6) 0%,
+          rgba(255,255,255,0) 35%,
+          rgba(255,255,255,0) 60%,
+          rgba(255,255,255,.75) 100%
+        );
+      }
+
+      /* hero-content ocupa todo el espacio disponible entre nav y fondo */
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        max-width: 100%;
+        padding: 0;
+      }
+
+      /* ARRIBA: eyebrow + título */
+      .hero-top {
+        padding: 1.2rem 1.4rem 0;
+      }
+      .hero-top .hero-eyebrow {
+        font-size: .58rem;
+        letter-spacing: .22em;
+        margin-bottom: .7rem;
+        color: var(--gold);
+      }
+      .hero-top .hero-title {
+        font-size: clamp(2.8rem, 11vw, 4rem);
+        line-height: 1;
+        margin-bottom: 0;
+        color: var(--black);
+      }
+
+      /* ABAJO: tagline + desc + botones */
+      .hero-bottom {
+        padding: 0 1.4rem 1.8rem;
+      }
+      .hero-bottom .hero-tagline {
+        font-size: .9rem;
+        margin-bottom: .5rem;
+        color: rgba(26,26,26,.75);
+      }
+      .hero-bottom .hero-desc {
+        font-size: .78rem;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+        color: rgba(26,26,26,.65);
+        max-width: 100%;
+      }
+
+      /* Botones apilados full width */
+      .hero-ctas { flex-direction: column; gap: .6rem; }
+      .btn-primary, .btn-outline, .btn-wa {
+        width: 100%;
+        justify-content: center;
+        padding: .95rem 1.5rem;
+        font-size: .68rem;
+      }
+      .btn-outline {
+        background: rgba(255,255,255,.5);
+        backdrop-filter: blur(6px);
+        border-color: rgba(26,26,26,.4);
+      }
+
+      .hero-scroll { display: none; }
+
+      /* Product CTA full-width on mobile */
+      .product-cta { display: flex; width: 100%; }
+
+      .about-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-quote { font-size: 1.6rem; }
+
+      .products-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
+      /* Extra bottom space so sticky bar doesn't cover last product */
+      #collection { padding-bottom: 7rem; }
+
+      .community-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+
+      .order-steps { grid-template-columns: 1fr; gap: 3rem; }
+      .order-steps::before { display: none; }
+      #order { padding-bottom: 7rem; }
+
+      .contact-links { flex-wrap: wrap; justify-content: center; gap: 1.2rem; }
+      #contact { padding-bottom: 7rem; }
+
+      footer { padding: 3rem 1.5rem 5rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-top .hero-title { font-size: 2.6rem; }
+      #hero { padding-top: 82px; }
+      .products-grid { grid-template-columns: 1fr; }
+      .faith-verse { font-size: 1.4rem; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── FLOATING WHATSAPP ──────────────────────── -->
+  <a href="https://wa.me/526311909074?text=Hola!%20Vi%20tu%20web%20y%20me%20interesa%20una%20Jeshua%20Shirt."
+     class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ── MOBILE STICKY CTA BAR ─────────────────── -->
+  <div class="mobile-cta-bar" id="mobileCta">
+    <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20una%20Jeshua%20Shirt." target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i> Pedir mi Camisa Ahora
+    </a>
+  </div>
+
+  <!-- ── NAV ───────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-row-top">
+      <div class="nav-logo">
+        <div class="nav-logo-badge">
+          <img src="assets/Logo%20final%20jeshua%20shirts.png" alt="Jeshua Shirts - Logo" width="36" height="36" />
+        </div>
+        <div class="nav-logo-info">
+          <span class="nav-logo-text">Jeshua Shirts</span>
+          <span class="nav-logo-sub">Fe en Cada Hilo</span>
+        </div>
+      </div>
+      <div class="nav-hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#collection">Tienda</a></li>
+      <li><a href="#about">Historia</a></li>
+      <li><a href="#community">Comunidad</a></li>
+      <li><a href="#order">Pedir</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+
+      <!-- TOP: eyebrow + title (above shirt on mobile) -->
+      <div class="hero-top">
+        <span class="hero-eyebrow">Ropa Inspirada en la Fe</span>
+        <h1 class="hero-title">Jeshua<br/>Shirts</h1>
+      </div>
+
+      <!-- MOBILE ONLY: product shirt image in the center -->
+      <div class="hero-shirt-wrap">
+        <img src="assets/productos/diseno-web-mobile.png" alt="Jeshua Shirts — Mateo 24:42" />
+      </div>
+
+      <!-- BOTTOM: tagline + desc + CTAs (below shirt on mobile) -->
+      <div class="hero-bottom">
+        <p class="hero-tagline">Fe en Cada Hilo</p>
+        <p class="hero-desc">Ropa premium para creyentes modernos. Viste tu fe con propósito — diseñada para quienes llevan sus creencias a cada momento del día.</p>
+        <div class="hero-ctas">
+          <a href="#collection" class="btn-primary">Ver Colección</a>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20Jeshua%20Shirts." target="_blank" rel="noopener" class="btn-outline">
+            <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Desliza</span>
+    </div>
+  </section>
+
+  <!-- ── COLLECTION ─────────────────────────────── -->
+  <section id="collection">
+    <div class="collection-header reveal">
+      <span class="section-label">La Colección</span>
+      <h2 class="section-title">Viste Tu Fe</h2>
+      <p class="section-sub">Cada prenda está hecha con intención — una declaración silenciosa de fe para cada día.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/1.png" alt="Mateo 24:42 — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/1.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%201.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%201.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Mateo 24:42</span>
+          <span class="product-verse">"La fe mueve montañas y todo comienza contigo."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Mateo%2024%3A42." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/2.png" alt="Más que Vencedores Tee — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/2.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%202.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%202.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Más que Vencedores Tee</span>
+          <span class="product-verse">"En Cristo siempre hay más fuerza, más fe y más victoria."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20M%C3%A1s%20que%20Vencedores%20Tee." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/3.png" alt="Mateo 17:20 — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/3.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%203.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%203.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Mateo 17:20</span>
+          <span class="product-verse">"Lo que hay en tu corazón se refleja en tu vida."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Mateo%2017%3A20." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/4.png" alt="Beerseba Tee — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/4.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%204.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%204.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Beerseba Tee</span>
+          <span class="product-verse">"Un lugar de pacto, fe y nuevos comienzos."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Beerseba%20Tee." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/5.png" alt="Salmo 121 — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/5.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%205.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%205.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Salmo 121</span>
+          <span class="product-verse">"Mi ayuda viene del Señor, creador del cielo y la tierra."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Salmo%20121." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/6.png" alt="Jehová Rapha Tee — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/6.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%206.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%206.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Jehová Rapha Tee</span>
+          <span class="product-verse">"El Dios que sana, restaura y levanta."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Jehov%C3%A1%20Rapha%20Tee." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/7.png" alt="Filipenses 4:13 — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/7.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%207.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%207.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Filipenses 4:13</span>
+          <span class="product-verse">"Todo lo puedo en Cristo que me fortalece."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Filipenses%204%3A13." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/8.png" alt="God The Creator — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/8.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%208.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%208.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">God The Creator</span>
+          <span class="product-verse">"Cada hilo recuerda que hay un Dios que lo creó todo."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20God%20The%20Creator." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/9.png" alt="Salmo 42:1 — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/9.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%209.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%209.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Salmo 42:1</span>
+          <span class="product-verse">"Como el ciervo anhela las aguas, así mi alma te anhela a ti."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Salmo%2042%3A1." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/10.png" alt="Jehovah Raah — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/10.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%2010.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%2010.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Jehovah Raah</span>
+          <span class="product-verse">"El Señor es mi pastor — nada me faltará."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Jehovah%20Raah." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="assets/productos/Parte%20delantera/11.png" alt="Colosenses 3:23 — Frente" loading="lazy" />
+        </div>
+        <div class="product-views">
+          <button class="view-btn active" onclick="switchView(this,'assets/productos/Parte%20delantera/11.png')">Frente</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Trasera/Parte%20trasera%2011.png')">Trasera</button>
+          <button class="view-btn" onclick="switchView(this,'assets/productos/Parte%20trasera%20y%20costado/Parte%20Costado/Parte%20costado%2011.png')">Costado</button>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Colosenses 3:23</span>
+          <span class="product-verse">"Todo lo que hagas, hazlo con todo tu corazón — como para el Señor."</span>
+          <a href="https://wa.me/526311909074?text=Hola!%20Me%20interesa%20la%20Colosenses%203%3A23." class="product-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────────── -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="reveal">
+        <blockquote class="about-quote">
+          "Ropa que carga más que un diseño — carga un llamado."
+        </blockquote>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-label">Nuestra Historia</span>
+        <span class="cross-accent">†</span>
+        <p>Jeshua Shirts nació de una convicción simple pero poderosa: la fe merece vestirse con orgullo. No con ruido — sino con confianza silenciosa. Cada camisa es una declaración de identidad, un recordatorio de quién eres y de quién te perteneces.</p>
+        <p>Diseñamos para personas que viven su fe más allá del domingo por la mañana. Para quienes llevan sus creencias al trabajo, a la escuela y a las calles de cada día. Calidad premium, diseño intencional y verdad bíblica — tejidos en cada prenda.</p>
+        <p>Esto no es solo ropa. Es una declaración.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAITH MESSAGE ──────────────────────────── -->
+  <section id="faith">
+    <span class="faith-cross reveal">†</span>
+    <blockquote class="faith-verse reveal">
+      "Así alumbre vuestra luz delante de los hombres, para que vean vuestras buenas obras y glorifiquen a vuestro Padre."
+    </blockquote>
+    <span class="faith-ref reveal">Mateo 5:16</span>
+    <div class="faith-line reveal"></div>
+    <p class="faith-desc reveal">
+      Jeshua Shirts existe para ser un puente entre la fe y la vida cotidiana. Cada camisa que vistes es una invitación silenciosa — un inicio de conversación, un recordatorio y un testimonio. Creemos que cuando vistes tu fe, llevas luz a cada lugar al que entras.
+    </p>
+  </section>
+
+  <!-- ── COMMUNITY ──────────────────────────────── -->
+  <section id="community">
+    <div class="community-inner">
+      <div class="community-header reveal">
+        <span class="section-label">Comunidad</span>
+        <h2 class="section-title">No Estás Solo</h2>
+        <p class="section-sub">Jeshua Shirts es más que una marca de ropa — es una comunidad de creyentes que eligen vivir su fe, un día a la vez.</p>
+      </div>
+      <div class="community-grid">
+        <div class="community-card reveal">
+          <div class="community-card-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3 class="community-card-title">Arraigados en la Fe</h3>
+          <p class="community-card-text">Cada diseño comienza con oración e intención. Nuestras camisas representan valores cristianos auténticos — amor, gracia, fortaleza y esperanza.</p>
+        </div>
+        <div class="community-card reveal">
+          <div class="community-card-icon"><i class="fa-solid fa-users"></i></div>
+          <h3 class="community-card-title">Hecha para la Comunidad</h3>
+          <p class="community-card-text">Cuando vistes una Jeshua Shirt, te unes a miles de creyentes en el mundo que comparten el mismo llamado: ser luz a donde vayan.</p>
+        </div>
+        <div class="community-card reveal">
+          <div class="community-card-icon"><i class="fa-solid fa-star"></i></div>
+          <h3 class="community-card-title">Viste con Propósito</h3>
+          <p class="community-card-text">Esto no es solo moda. Cada prenda está diseñada para iniciar conversaciones, inspirar a otros y ser un recordatorio diario de tu identidad en Cristo.</p>
+        </div>
+      </div>
+      <div class="community-ig reveal">
+        <a href="https://www.instagram.com/jeshuashirt/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i> Síguenos @jeshuashirt
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW TO ORDER ────────────────────────────── -->
+  <section id="order">
+    <span class="section-label">Proceso Simple</span>
+    <h2 class="section-title">¿Cómo Pedir la Tuya?</h2>
+    <div class="order-steps">
+      <div class="order-step reveal">
+        <span class="step-number">01</span>
+        <span class="step-icon"><i class="fa-solid fa-shirt"></i></span>
+        <h3 class="step-title">Elige tu Diseño</h3>
+        <p class="step-text">Explora nuestra colección y elige la camisa que le habla a tu corazón y a tu estilo.</p>
+      </div>
+      <div class="order-step reveal">
+        <span class="step-number">02</span>
+        <span class="step-icon"><i class="fa-brands fa-whatsapp"></i></span>
+        <h3 class="step-title">Envíanos un WhatsApp</h3>
+        <p class="step-text">Toca el botón de WhatsApp en cualquier producto. Dinos el diseño, talla y cantidad que quieres.</p>
+      </div>
+      <div class="order-step reveal">
+        <span class="step-number">03</span>
+        <span class="step-icon"><i class="fa-solid fa-box"></i></span>
+        <h3 class="step-title">Recibe tu Camisa</h3>
+        <p class="step-text">Confirmamos tu pedido, coordinamos la entrega y tu Jeshua Shirt llegará hasta ti.</p>
+      </div>
+    </div>
+    <div class="order-cta reveal">
+      <a href="https://wa.me/526311909074?text=Hola!%20Quiero%20hacer%20un%20pedido." class="btn-wa" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Hacer mi Pedido
+      </a>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────── -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <span class="section-label">Contáctanos</span>
+      <h2 class="section-title">¿Listo para Pedir?</h2>
+      <p class="section-sub">¿Tienes dudas sobre tallas, diseños personalizados o pedidos al por mayor? Estamos a un mensaje. Escríbenos por WhatsApp y te respondemos enseguida.</p>
+      <a href="https://wa.me/526311909074?text=Hola!%20Tengo%20una%20pregunta%20sobre%20Jeshua%20Shirts." class="btn-wa" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Enviar Mensaje
+      </a>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/jeshuashirt/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="mailto:hello@jeshuashirts.com">
+          <i class="fa-solid fa-envelope"></i> Correo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/Logo%20final%20jeshua%20shirts.png" alt="Jeshua Shirts - Logo" width="32" height="32" />
+      <span class="footer-logo-text">Jeshua Shirts</span>
+    </div>
+    <p class="footer-tagline">Fe en Cada Hilo</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/jeshuashirt/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <div class="footer-line"></div>
+    <p class="footer-copy">© 2026 Jeshua Shirts — Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    // Nav scroll behavior
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger siblings
+          const siblings = [...entry.target.parentElement.querySelectorAll('.reveal')];
+          const idx = siblings.indexOf(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, idx * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+
+    // Hamburger — only active on desktop (≥769px) where links can be toggled
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navLinks  = document.querySelector('.nav-links');
+
+    const isMobileNav = () => window.innerWidth <= 768;
+
+    hamburger.addEventListener('click', () => {
+      if (isMobileNav()) return; // mobile always shows links — no toggle needed
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active', isOpen);
+    });
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target)) {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      }
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('active');
+    }));
+
+    // Product view switcher
+    function switchView(btn, src) {
+      const card = btn.closest('.product-card');
+      const img  = card.querySelector('.product-img-wrap img');
+      img.src = src;
+      card.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    // Mobile sticky CTA bar — show after hero
+    const mobileCta = document.getElementById('mobileCta');
+    if (mobileCta) {
+      const heroEl = document.getElementById('hero');
+      const showCta = () => {
+        const heroBottom = heroEl.getBoundingClientRect().bottom;
+        mobileCta.classList.toggle('visible', heroBottom < 0);
+      };
+      window.addEventListener('scroll', showCta, { passive: true });
+      showCta();
+    }
+  </script>
+
+  <style>
+    /* Mobile: nav-links always visible as scroll row — no dropdown needed.
+       .open class only used on desktop if hamburger is ever triggered. */
+    @media (min-width: 769px) {
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: var(--white);
+        padding: 1.5rem 2rem;
+        gap: 1.5rem;
+        box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      }
+      .nav-links.open a { color: var(--black) !important; }
+
+      /* ── DESKTOP HERO: pin original layout, prevent any mobile bleed ── */
+      #hero {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 0;
+      }
+      .hero-bg {
+        background-image: url('assets/dise%C3%B1o%20desktop.png');
+        background-size: cover;
+        background-position: center center;
+      }
+      .hero-overlay {
+        background: linear-gradient(
+          120deg,
+          rgba(255,255,255,.45) 0%,
+          rgba(255,255,255,.10) 60%,
+          rgba(255,255,255,0) 100%
+        );
+      }
+      .hero-content {
+        display: block;
+        flex: none;
+        max-width: 640px;
+        padding: 0 4rem;
+      }
+      .hero-top    { padding: 0; }
+      .hero-bottom { padding: 0; }
+      .hero-shirt-wrap { display: none !important; }
+      .hero-ctas { flex-direction: row; }
+      .btn-primary, .btn-outline, .btn-wa {
+        width: auto;
+        justify-content: flex-start;
+        padding: .85rem 2rem;
+        font-size: .72rem;
+      }
+      .hero-scroll { display: flex; }
+    }
+  </style>
+</body>
+</html>
